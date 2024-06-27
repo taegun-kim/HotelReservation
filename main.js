@@ -86,7 +86,7 @@ loginBtn.addEventListener('click', () => {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
 
-        const url = 'http://localhost:3000/login';
+        const url = 'https://taegun-kim.github.io/HotelReservation/:3000/login';
         const data = { username: username, password: password };
 
         try {
@@ -117,7 +117,7 @@ loginBtn.addEventListener('click', () => {
         const newUsername = document.getElementById('newUsername').value;
         const newPassword = document.getElementById('newPassword').value;
 
-        const url = 'http://localhost:3000/signup';
+        const url = 'https://taegun-kim.github.io/HotelReservation/:3000/signup';
         const data = { username: newUsername, password: newPassword };
 
         try {
@@ -155,7 +155,7 @@ function updateLoginStatus(user) {
 
 
 async function fetchUserReservations(username) {
-    const url = `http://localhost:3000/user/${username}/reservations`;
+    const url = `https://taegun-kim.github.io/HotelReservation/:3000/user/${username}/reservations`;
 
     try {
         const response = await fetch(url);
@@ -221,7 +221,7 @@ async function submitReservation(event) {
     const reserveGuests = document.getElementById('reserveGuests').value;
     const reserveName = document.getElementById('reserveName').value;
 
-    const url = 'http://localhost:3000/reserve';
+    const url = 'https://taegun-kim.github.io/HotelReservation//reserve';
     const data = {
         hotelId: hotelId,
         reserveStartDate: reserveStartDate,

@@ -12,7 +12,7 @@ const sequelize = new Sequelize({
 });
 
 const corsOptions = {
-    origin: 'http://127.0.0.1:5500', // 당신의 프론트엔드 출처로 업데이트
+    origin: 'https://taegun-kim.github.io/HotelReservation/', // 당신의 프론트엔드 출처로 업데이트
     methods: ['GET', 'POST'], // 필요한 HTTP 메서드 추가
     allowedHeaders: ['Content-Type', 'Authorization'] // 프론트엔드에서 보내는 헤더 추가
 };
